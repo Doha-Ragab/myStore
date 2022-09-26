@@ -1,0 +1,10 @@
+<div class="container mt-5">
+    <div class="d-flex flex-column align-items-center justify-content-center" *ngFor="let item of userSuccessArray">
+        <h2 >Success!</h2>
+        <p>Thank you, <strong>{{item.fullName}}</strong></p>
+        <p>Your <strong>{{item.price}}</strong>odrer is confirmed!</p>
+        <p>Please allow 1-3 business day(s) for shipping</p>
+        <button class="btn btn-primary" (click)="backToList()">Back to product list</button>
+        
+    </div>
+</div>

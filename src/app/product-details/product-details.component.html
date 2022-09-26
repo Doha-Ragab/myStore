@@ -1,0 +1,29 @@
+<div class="container mt-5 d-flex justify-content-center" >
+    <div class="row  justify-content-evenly align-items-center gap-3" *ngFor="let item of itemDetailsArray">
+        <div class="col-5 d-flex justify-content-end">
+            <img src="{{item.url}}" alt="product" class="img-fluid rounded w-75">
+        </div>
+        <div class="col-5">
+            <h4>{{item.name}}</h4>
+            <p class="price">${{item.price}}</p>
+            <p class="des">{{item.description}}</p>
+            <select class="form-select mb-2 w-25 mb-1" aria-label="Default select example" #sel [ngModel]="amountValue" (ngModelChange)="selectamount(sel.value)" >
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+
+              </select>
+              <button class="btn btn-primary mb-1" (click)="AddToCart(item,amountValue)">Add to cart</button>
+
+              <br>
+              <a class="text-decoration-none text-primary" (click)="routetohome()"><i class="fa-solid fa-arrow-left me-1"></i> Back to product list</a>
+        </div>
+    </div>
+</div>

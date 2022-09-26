@@ -1,0 +1,23 @@
+<div class=" d-flex justify-content-center " (click)="getProductDetails(data.id)" >
+   <div class="border border-1  w-75"><img src="{{data.url}}" alt="" class="img-fluid  p-2"></div> 
+</div>
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <h6>{{data.name}}</h6>
+    <p class="price">${{data.price}}</p>
+    <select class="form-select mb-2 w-25 " aria-label="1" #sel [(ngModel)]="amountValue"  >
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+
+      </select>
+      <!-- <button class="btn btn-primary mb-1" (click)="AddToCart(item,amountValue)">Add to cart</button> -->
+      <button class="btn btn-primary mb-1"(click)="add() ">Add to cart</button>
+
+    </div>
