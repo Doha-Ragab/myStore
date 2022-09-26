@@ -1,27 +1,36 @@
 # Mystore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
+This is a sample application that demonstrates an E-commerce website using Angular . The application loads products from database and displays them.Users can click on any product to get more information including pricing, description. Users can select items and add them to their shopping cart
 
-## Development server
+# Live Demonstration
+Here are screenshots that show the myStore demo application in use.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**Products Page**
+![Capturess](https://user-images.githubusercontent.com/79616830/192012285-fcab7cf2-f38c-4329-8749-890b90feed48.JPG)
 
-## Code scaffolding
+**Cart Page**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Captures1](https://user-images.githubusercontent.com/79616830/192014433-e0060538-3851-4ec3-bb8e-c3404813fb28.JPG)
 
-## Build
+## Getting Started
+To get started  you can simply clone this `myStore` repository and install the dependencies.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone the `myStore` repository using git:
 
-## Running unit tests
+```bash
+git clone https://github.com/Doha-Ragab/myStore
+cd myStore
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Install dependencies with this command:
+```bash
+npm install
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run the application with this command:
+```bash
+npm start
+```
+# Tech Stack
+* Angular
+* Bootstrap
