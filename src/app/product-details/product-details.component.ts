@@ -67,13 +67,13 @@ AddToCart(item:any,quantity:any){
 
   }
 
-console.log(this.cartArray)
+// console.log(this.cartArray)
 
 }
 
 selectamount(value:any){
 this.amountValue=value;
-console.log(this.amountValue)
+// console.log(this.amountValue)
 }
 
 }

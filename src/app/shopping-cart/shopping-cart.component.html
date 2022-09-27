@@ -7,7 +7,9 @@
           <div class="col-5">               
             <img src="{{item.item.url}}" alt="product" class="img-fluid w-75 rounded rounded-2">
           </div>
-          <div class="col-5"> 
+          <div class="col-5 "> 
+            <a class=" d-flex justify-content-end btn border-0" (click)="deleteProductbtn(i)"><i class="fa-solid fa-xmark "></i></a>
+
             <h5 class="name">{{item.item.name}}</h5>
             <p>${{item.item.price}}</p>
           <div class="d-flex align-items-center">
@@ -62,9 +64,9 @@
                   </strong>
              </div>
             <span>We'll never share your payment details with anyone else.</span>
-            <button class="btn btn-primary mt-3" (click)="do();getUser()" [disabled]="registerForm.invalid && registerForm.touched">Submit</button>
+            <button class="btn btn-primary mt-3" (click)="getUser()" [disabled]="registerForm.invalid && registerForm.touched  ">Submit</button>
 
         </form>
         </div>
-    </div>
+    
 </div>

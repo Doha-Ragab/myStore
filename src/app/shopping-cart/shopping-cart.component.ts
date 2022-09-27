@@ -41,7 +41,8 @@ registerForm=new FormGroup({
 
 })
 getUser(){
-  if("user" in localStorage){
+  if(this.totalPrice>0 && this.registerForm.valid){
+  if("user" in localStorage ){
     this._ApiService.users=JSON.parse(localStorage.getItem("user")!)
   }
   
@@ -50,17 +51,32 @@ getUser(){
 
 localStorage.setItem("user" , JSON.stringify(this._ApiService.users))
   this._Router.navigate(['success'])
-} 
+  }
+  if(this.registerForm.invalid){
+    alert("form is empty")
+  }
+  if(this.totalPrice==0){
+    alert("cart is empty")
+  }
+ }
 
 deleteProduct(i:number,q:number){
 if(q==0){
   this.productShoppingCart.splice(i,1);
   localStorage.setItem("cart" , JSON.stringify(this.productShoppingCart));
   this._CartService.getproductShoppingCart();
+  alert("This item removed from cart")
 
 }
 
   }
-
+  deleteProductbtn(i:number){
+      this.productShoppingCart.splice(i,1);
+      localStorage.setItem("cart" , JSON.stringify(this.productShoppingCart));
+      this._CartService.getproductShoppingCart();
+      this.getToltalPrice()
+      alert("This item removed from cart")
+    
+}
 
 }
