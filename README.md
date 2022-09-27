@@ -2,6 +2,17 @@
 
 This is a sample application that demonstrates an E-commerce website using Angular . The application loads products from database and displays them.Users can click on any product to get more information including pricing, description. Users can select items and add them to their shopping cart
 
+#Description
+
+* You can add product and determine quantity of product from product-list page.
+
+* Get information about product by details product page and through it can control with quantity and add it to your cart.
+
+* Cart page provide products that you added and can edit to quantity or delete product you don't need it and
+  provide total price of your cart then you must submit form to complete your order.
+
+
+
 # Live Demonstration
 Here are screenshots that show the myStore demo application in use.
 
