@@ -2,7 +2,7 @@
 
 This is a sample application that demonstrates an E-commerce website using Angular . The application loads products from database and displays them.Users can click on any product to get more information including pricing, description. Users can select items and add them to their shopping cart
 
-#Description
+# Description
 
 * You can add product and determine quantity of product from product-list page.
 
